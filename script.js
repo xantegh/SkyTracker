@@ -1253,6 +1253,24 @@ function refreshTableInfo() {
             show_squawk_warning = true;
     }
 
+
+    /* **************************************************************** */
+  	/* Antoine - Identifying Military airplanes based on ICAO Type Code */
+
+  	if (
+              ($.inArray(tableplane.icaotype, MilAircraftTypes)!= -1) ||
+              (tableplane.icao.startsWith('ae'))
+  	   ) {
+
+  	   classes = classes + " military"
+  	}
+
+  	/* **************************************************************** */
+
+
+
+
+
         // ICAO doesn't change
     if (tableplane.flight) {
             tableplane.tr.cells[2].innerHTML = getFlightAwareModeSLink(tableplane.icao, tableplane.flight, tableplane.flight);
