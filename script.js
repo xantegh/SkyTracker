@@ -23,7 +23,7 @@ var SpecialSquawks = {
         '7700' : { cssClass: 'squawk7700', markerColor: 'rgb(255, 255, 0)', text: 'General Emergency' }
 };
 
-var MilAircraftTypes = ['B739','B738','B52','C130','C30J','C17','K35R','K35E','C135','E6','E3CF','E3TF'];
+var MilAircraftTypes = ['B52','C130','C30J','C17','K35R','K35E','C135','E6','E3CF','E3TF'];
 
 // Get current map settings
 var CenterLat, CenterLon, ZoomLvl, MapType;
