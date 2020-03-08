@@ -2,10 +2,10 @@
 html, body {
 	-ms-overflow-style: -ms-autohiding-scrollbar;
     margin: 0; padding: 0; background-color: #000000; font-family: "Rajdhani", "Archivo", sans-serif;
-    font-size: 12pt; 
+    font-size: 12pt;
 }
 
-#layout_container { 
+#layout_container {
 }
 
 #selected_infoblock {
@@ -21,7 +21,7 @@ html, body {
 	height: 100%;
 }
 
-#sidebar_canvas { 
+#sidebar_canvas {
     padding: 10px;
 }
 
@@ -77,8 +77,8 @@ div#loader { z-index: 99; position: absolute; left: 0; top: 0; bottom: 0; right:
 #spinny { width: 128px; height: 128px; position: absolute; top: 50%; left: 50%; margin: -64px 0 0 -64px; }
 #loader_progress { width: 250px; height: 20px; position: absolute; top: 50%; left: 50%; margin: 128px 0 0 -125px; }
 
-#tableinfo { 
-  font-size: small; 
+#tableinfo {
+  font-size: small;
 }
 
 #sudo_buttons {
@@ -93,7 +93,7 @@ div#loader { z-index: 99; position: absolute; left: 0; top: 0; bottom: 0; right:
     margin: 10px 0 10px 0;
 }
 
-.aircraft_table_header { 
+.aircraft_table_header {
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -127,7 +127,7 @@ div#loader { z-index: 99; position: absolute; left: 0; top: 0; bottom: 0; right:
 .squawk7700 { font-weight: bold; background-color: #ffff00; }
 .selected   { color: #F9AA33; }
 
-.plane_table_row { 
+.plane_table_row {
     cursor: cell;
     font-family: "Rajdhani", "Archivo", sans-serif;
     font-size: 16px;
@@ -136,7 +136,7 @@ div#loader { z-index: 99; position: absolute; left: 0; top: 0; bottom: 0; right:
 }
 
 .plane_table_row td {
-  border-bottom: 1px solid #78909C; 
+  border-bottom: 1px solid #78909C;
 }
 
 .plane_table_row a {
@@ -399,7 +399,7 @@ select.error, textarea.error, input.error {
 }
 
 /* Retina 2x images */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .settingsCloseBox {
         background-image: url('images/close-settings@2x.png');
     }
@@ -427,7 +427,7 @@ select.error, textarea.error, input.error {
 }
 
 /* Retina 3x images */
-@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 192dpi) { 
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 192dpi) {
     .settingsCloseBox {
         background-image: url('images/close-settings@3x.png');
     }
@@ -452,4 +452,10 @@ select.error, textarea.error, input.error {
     #toggle_sidebar_button.hide_sidebar {
         background-image: url("images/map-icon@3x.png");
     }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  #seen {
+    display: none;
+  }
 }
